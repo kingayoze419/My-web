@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-GUN Tech.com</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      text-align: justify;
+    }
+      
+    /* Toggle Button */
+  .toggle-btn {
+  background-color: #000A1F;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+margin: 10px;
+  z-index: 20;
+}
+
+ .sidebar {
+  width: 200px;
+  background-color: #0a0a23;
+  color: white;
+  padding-top: 60px;
+  height: 100vh;
+  position: absolute;
+  left: -220px;
+  top: 0;
+  transition: left 0.3s ease;
+  z-index: 10;
+}
+
+    .sidebar.active {
+      left: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #000A1F;
+    }
+
+    .sidebar a i {
+      margin-right: 10px;
+    }
+
+    .main {
+      margin-left: none;
+      margin-right: none;
+      padding: 10px;
+    }
+
+h1 {
+  background-color: #000A1F;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px; /* 👈 Add this line to move it down */
+}
+
+    h2 {
+      text-align: center;
+      color: #000A1F;
+      padding: 5px;
+      font-size: 11px;
+    }
+
+    main {
+      padding: 0px;
+      margin: 5px;
+    }
+
+    footer {
+      background-color: #000A1F;
+      color: white;
+      padding: 6px 0;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin-top: -59px;
+      padding-left: 130px;
+    }
+
+    .search-box {
+      width: 150px;
+      border: 2px solid #000A1F;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .search-box:focus {
+      border-color: #000A1F;
+    }
+
+    .search-btn {
+      padding: 10px 20px;
+      border: none;
+      background-color: #000A1F;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .search-btn:hover {
+      background-color: #0a0a23;
+    }
+    .bottom-dark {
+  background-color: #111; /* very dark gray/black */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.bottom-dark a {
+  color: #4da6ff;
+  text-decoration: underline;
+}
+
+.bottom-dark a:hover {
+  color: #ffffff;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Toggle Sidebar Button -->
+  <button class="toggle-btn" onclick="toggleSidebar()">
+    <i class="fas fa-bars"></i> Menu
+  </button>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <a href="#"><i class="fas fa-home"></i> Home</a>
+    <a href="#"><i class="fas fa-user"></i> About</a>
+    <a href="#"><i class="fas fa-cogs"></i> Services</a>
+    <a href="#"><i class="fas fa-phone"></i> Contact</a>
+    <a href="https://chat.openai.com/" target="_blank">
+<i class="fas fa-robot"></i>Visit AI</a>
+    <a href="AB.jpg"><i class="fas fa-image"></i>ME</a>
+    
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <header>
+
+      <div class="search-container">
+        <input type="text" placeholder=" Search..." class="search-box" />
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      <h1>WELCOME TO E-GUN TECH</h1>
+
+      <h2>SITES TO LEARN PROGRAMMING AS A BEGINNER</h2>
+    </header>
+
+    <main>
+      <ul>
+        <li>W3 Schools</li>
+        <li>Free Code Camp</li>
+        <li>Programming with Mosh</li>
+        <li>Amera Tech</li>
+        <li>E-GUN Tech</li>
+      </ul>
+      
+    </main>
+
+    <img src="Ayoze.jpg" style="max-width:100%; height: auto;">
+<section class="bottom-dark">
+  <h3>Interact with us</h3>
+  <p> 
+
+<!-- Social Media Links Section -->
+<div class="social-icons">
+  <!-- X (formerly Twitter) -->
+  <a href="https://x.com/KwekuPhilosopha" target="_blank" title="X">
+    <i class="fab fa-x-twitter fa-2x"></i>
+  </a>
+
+  <!-- Gmail -->
+  <a href="mailto:shadrackeghan015@gmail.com" title="Email">
+    <i class="fas fa-envelope fa-2x"></i>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/kingayoze419" target="_blank">
+  <i class="fab fa-facebook fa-2x"></i>
+</a>
+
+  <!-- Instagram -->
+  <a href="https://instagram.com/kingayoze419" target="_blank" title="Instagram">
+    <i class="fab fa-instagram fa-2x"></i>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/0596119789" target="_blank" title="WhatsApp">
+    <i class="fab fa-whatsapp fa-2x"></i>
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://www.youtube.com/@kingayoze419" target="_blank" title="YouTube">
+    <i class="fab fa-youtube fa-2x"></i>
+  </a>
+</div>
+  </p>
+</section>
+      <footer>
+      <p>&copy; 2025<br>All rights reserved</p>
+      </footer>
+  <!-- JavaScript -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
